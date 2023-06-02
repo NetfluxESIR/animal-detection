@@ -1,11 +1,8 @@
 FROM python:3.11.3-bullseye
 
 WORKDIR /app
-
-# Copie du code source
 COPY . .
 
-# Installation des dépendances
 RUN apt-get update && \
     apt install -y ffmpeg git curl gcc musl-dev &&  \
     pip install --no-cache-dir poetry==1.4.2 && \
@@ -16,6 +13,4 @@ RUN apt-get update && \
     rm -rf /root/.cache/ && \
     rm -rf /usr/local/src/*
 
-
-# Exécution du script
 CMD python detect_animals_v3.py 
