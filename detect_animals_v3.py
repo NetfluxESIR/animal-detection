@@ -72,7 +72,7 @@ def run(
             (0, 0, 0), 
             swapRB=True, 
             crop=False
-            )
+        )
 
         # Passer l'image dans le réseau de neurones YOLOv3 pour détecter les objets
         net.setInput(blob)
@@ -96,11 +96,5 @@ def run(
     cap.release()
 
 
-
-
-
 if __name__ == "__main__":
     app()
-
-
-
