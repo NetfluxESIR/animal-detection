@@ -11,8 +11,6 @@ RUN apt-get update && \
     pip install --no-cache-dir poetry==1.4.2 && \
     poetry config virtualenvs.create false --local && \
     poetry install && \
-    poetry install opencv-python-headless==4.5.4.58 \
-    poetry install numpy==1.19.5 \
     pip uninstall -y poetry && \
     apt remove -y git curl gcc musl-dev && \
     rm -rf /root/.cache/ && \
