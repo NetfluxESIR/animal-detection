@@ -7,9 +7,12 @@ import typer
 
 # Liste des animaux à détecter
 animal_list = [
-    "lion", "gazelle", "zebra", "elephant", "rhinoceros", "hippopotamus", "giraffe",
-    "cow", "pig", "horse", "sheep", "chicken", "duck", "goose", "turkey", "dog", "cat",
-    "rabbit", "hamster", "guinea pig", "canary", "parrot", "goldfish", "turtle", "snake", "lizard",
+    "lion", "gazelle", "zebra", "elephant", "rhinoceros", 
+    "hippopotamus", "giraffe",
+    "cow", "pig", "horse", "sheep", "chicken", "duck", "goose", "turkey", 
+    "dog", "cat",
+    "rabbit", "hamster", "guinea pig", "canary", "parrot", "goldfish", 
+    "turtle", "snake", "lizard",
     "bird", "butterfly", "bee", "spider", "worm"
 ]
 
