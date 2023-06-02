@@ -8,12 +8,11 @@ import typer
 # Liste des animaux à détecter
 animal_list = [
     "lion", "gazelle", "zebra", "elephant", "rhinoceros", 
-    "hippopotamus", "giraffe",
-    "cow", "pig", "horse", "sheep", "chicken", "duck", "goose", "turkey", 
-    "dog", "cat",
-    "rabbit", "hamster", "guinea pig", "canary", "parrot", "goldfish", 
-    "turtle", "snake", "lizard",
-    "bird", "butterfly", "bee", "spider", "worm"
+    "hippopotamus", "giraffe","cow", "pig", "horse",
+    "sheep", "chicken", "duck", "goose", "turkey",
+    "dog", "cat","rabbit", "hamster", "guinea pig", 
+    "canary", "parrot", "goldfish", "turtle", "snake", 
+    "lizard","bird", "butterfly", "bee", "spider", "worm"
 ]
 
 
@@ -66,7 +65,14 @@ def run(
             break
 
         # Préparation de l'image pour la détection d'objet
-        blob = cv2.dnn.blobFromImage(frame, 1/255, (416, 416), (0, 0, 0), swapRB=True, crop=False)
+        blob = cv2.dnn.blobFromImage(
+            frame, 
+            1/255, 
+            (416, 416), 
+            (0, 0, 0), 
+            swapRB=True, 
+            crop=False
+            )
 
         # Passer l'image dans le réseau de neurones YOLOv3 pour détecter les objets
         net.setInput(blob)
