@@ -33,7 +33,7 @@ def run(
             help="Input file path",
         )
 ):
-    neural_network = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
+    neural_network = cv2.dnn.readNet("./yolov3.weights", "./yolov3.cfg")
     classes = []
     with open("yolov3_classes.txt", "r") as f:
         classes = [line.strip() for line in f]
