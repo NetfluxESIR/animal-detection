@@ -1,0 +1,10 @@
+services:
+  animal-detection:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    command:
+      - -i
+      - /data/videos/animals.mp4
+    volumes:
+        - ./video.mp4:/data/videos/animals.mp4

@@ -2,7 +2,7 @@
 name = "animal_detection"
 version = "0.1.0"
 description = ""
-authors = ["Tom PIRE"]
+authors = ["Tom PIRE", "Mathis JOFFRE <mariusjoffre@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
